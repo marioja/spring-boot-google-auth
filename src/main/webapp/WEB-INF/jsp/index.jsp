@@ -15,7 +15,7 @@
 			</div>
 		</div>
 		<h1>Super Special Greeting</h1>
-		<div>Hello World</div>
+		<div>Hello World <%=request.getUserPrincipal() == null ? "not logged in" : request.getUserPrincipal().toString() %></div>
 	</div>
 </body>
 </html>
